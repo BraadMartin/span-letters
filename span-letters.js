@@ -1,9 +1,9 @@
-( function ( $ ) {
+( function( $ ) {
 
     /**
      * span-letters.js
      * 
-     * Example usage: jQuery(".selector").spanLetters();
+     * Example usage: jQuery('.selector').spanLetters();
      */
     $.fn.spanLetters = function() {
 
@@ -14,11 +14,11 @@
             var words, i, text;
           
             // Make an array with each letter of the string as a value
-            words = $( this ).text().split("");
+            words = $( this ).text().split( '' );
 
             // Loop through the letters and wrap each one in a span
             for ( i = 0; i in words; i++ ) {
-              words[i] = '<span class="sl' + ( i + 1 ) + ' span-letter">' + words[i] + '</span>'
+                words[i] = '<span class="sl' + ( i + 1 ) + ' span-letter">' + words[i] + '</span>'
             };
 
             // Join our array of span-wrapped letters back into a string
